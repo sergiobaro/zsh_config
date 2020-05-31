@@ -1,3 +1,4 @@
+#!/bin/sh
 
 alias gbD="git branch -D $1"
 alias gdif="git diff $1"
