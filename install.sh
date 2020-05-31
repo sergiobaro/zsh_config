@@ -1,11 +1,10 @@
 #!/bin/sh
 
-config_file=~/.zshrc
-command="source .aliases"
+destination=~/.oh-my-zsh/custom
 
-if [ -f "${config_file}" ]; then
-    cp aliases.sh ~/.aliases
-    grep -qxF "$command" "${config_file}" || echo "\n$command" >> "${config_file}"
+if [ -d "${destination}" ]; then
+    cp aliases.zsh "$destination"
+    # grep -qxF "$command" "${config_file}" || echo "\n$command" >> "${config_file}"
 else
-    echo "File .zshrc not found."
+    echo "${destination} not found."
 fi
