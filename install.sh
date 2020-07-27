@@ -1,10 +1,10 @@
 #!/bin/sh
 
-destination=~/.oh-my-zsh/custom
+ohmyzsh_custom_folder=~/.oh-my-zsh/custom
 
-if [ -d "${destination}" ]; then
-    cp aliases.zsh "$destination"
+if [ -d "${ohmyzsh_custom_folder}" ]; then
+    cp *.zsh "$ohmyzsh_custom_folder"
     # grep -qxF "$command" "${config_file}" || echo "\n$command" >> "${config_file}"
 else
-    echo "${destination} not found."
+    echo "${ohmyzsh_custom_folder} not found."
 fi
