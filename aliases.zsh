@@ -2,6 +2,7 @@
 
 # GIT
 alias gbD="git branch -D $1"
+alias gbDl="git branch | egrep -v \"(master|develop|\*)\" | xargs git branch -D"
 alias gdif="git diff $1"
 alias gdifh="git diff HEAD"
 alias glog="git log --oneline"
