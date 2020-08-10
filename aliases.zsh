@@ -11,3 +11,6 @@ alias gcamd="git commit --amend"
 
 # NETWORK
 alias myip="ipconfig getifaddr en0"
+
+# OTHERS
+alias l="ls -1"
