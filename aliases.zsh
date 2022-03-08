@@ -10,6 +10,8 @@ alias gcubr="git rev-parse --abbrev-ref HEAD" # prints current branch
 alias gcamd="git commit --amend"
 alias gpp="git pull --prune"
 alias gwl="git worktree list"
+alias gwa="git worktree add"
+alias gwr="git worktree remove"
 
 # NETWORK
 alias myip="ipconfig getifaddr en0"
